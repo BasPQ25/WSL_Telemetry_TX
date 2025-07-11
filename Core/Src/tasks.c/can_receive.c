@@ -9,6 +9,7 @@ extern uint8_t Second_Buffer_Flag;
 
 uint8_t Dashboard_Rtc_Request = 0;
 
+
 void USB_LP_CAN_RX0_IRQHandler(void)
 {
 	//Function variables
@@ -62,8 +63,7 @@ void USB_LP_CAN_RX0_IRQHandler(void)
 	 if (++dma_offset == DMA_UART_MSG_CNT)
 	 {
 	 	dma_offset = 0;
-	     HAL_UART_Transmit_DMA(&huart1, p_buffer, DMA_BUFFER_SIZE);
+	    HAL_UART_Transmit_DMA(&huart1, p_buffer, DMA_BUFFER_SIZE);
 	 }
-
-
 }
+

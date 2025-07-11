@@ -124,7 +124,7 @@ int main(void)
 
   HAL_TIM_Base_Start_IT(&htim2);
 
-//  SetTime(00,36,17,1, 12, 5, 25);
+//  SetTime(00,22,19,1, 7, 7, 25);
   /* USER CODE END 2 */
 
   /* Infinite loop */
